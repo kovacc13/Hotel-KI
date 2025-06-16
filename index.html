@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KI-Einführung für die JUFA Gruppe: Strategie, Förderung & Praxis</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {  
+            font-family: 'Inter', sans-serif;  
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Style for the active tab button */
+        .tab-button.active {
+            border-color: #0891b2; /* cyan-600 */
+            background-color: #fff;
+            color: #0891b2; /* cyan-600 */
+            font-weight: 600;
+            box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+        }
+        /* Basic transition for tab buttons */
+        .tab-button {
+            transition: all 0.2s ease-in-out;
+        }
+        /* Hide tab content by default and apply a fade-in animation */
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        /* Show active tab content */
+        .tab-content.active {
+            display: block;
+        }
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Styles for the collapsible content area */
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+            padding: 0 1.5rem; /* p-6 horizontal padding */
+        }
+        /* Style for the expanded content area */
+        .collapsible-content.expanded {
+            max-height: 500px; /* Adjust as needed for content */
+            padding: 1.5rem; /* p-6 */
+        }
+        /* Chevron icon rotation for visual feedback */
+        .chevron-icon.rotated {
+            transform: rotate(180deg);
+            transition-duration: 300ms;
+        }
+         .chevron-icon {
+            transition-duration: 300ms;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <!-- Header Section -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight">KI in Ihrem Hotel: Vom personalisierten Gästeerlebnis zur operativen Exzellenz</h1>
+            <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Mit Bildungswelten für die Hotellerie: Starten Sie Ihre KI-Initiative und nutzen Sie die Chance auf <span class="font-semibold text-amber-600">50% FFG-Förderung</span>.</p>
+        </header>
+
+        <!-- Tab Navigation -->
+        <div class="mb-10 flex flex-wrap justify-center border-b border-slate-200">
+            <button data-tab="tab-strategy" class="tab-button active text-slate-500 py-3 px-6 border-b-2 border-transparent text-center font-medium rounded-t-lg">Strategie & Umsetzung</button>
+            <button data-tab="tab-examples" class="tab-button text-slate-500 py-3 px-6 border-b-2 border-transparent text-center font-medium rounded-t-lg">Praxisbeispiele: Hotellerie & Gästeerlebnis</button>
+            <button data-tab="tab-funding" class="tab-button text-slate-500 py-3 px-6 border-b-2 border-transparent text-center font-medium rounded-t-lg">FFG-Förderung</button>
+        </div>
+
+        <!-- Main Content Area -->
+        <main>
+            <!-- Tab 1: Strategy & Implementation -->
+            <div id="tab-strategy" class="tab-content active">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-slate-800">Ihr Weg zur KI-Integration in 4 Schritten</h2>
+                    <p class="mt-2 text-md text-slate-500">Wir führen Sie strukturiert von der ersten Idee bis zum erfolgreichen Roll-out in Ihren JUFA Hotels.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Step 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-200/80 text-center">
+                        <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-cyan-100 text-cyan-700 text-3xl font-bold">1</div>
+                        <h3 class="mt-5 text-xl font-bold text-slate-900">Potenzialanalyse</h3>
+                        <p class="mt-2 text-slate-600">Wir identifizieren gemeinsam konkrete Anwendungsfälle, wo KI in Ihren Hotels den größten Mehrwert stiftet – von der Gästekommunikation bis zur Betriebseffizienz.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-200/80 text-center">
+                        <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-cyan-100 text-cyan-700 text-3xl font-bold">2</div>
+                        <h3 class="mt-5 text-xl font-bold text-slate-900">Strategieentwicklung</h3>
+                        <p class="mt-2 text-slate-600">Basierend auf der Analyse entwickeln wir eine klare KI-Roadmap mit definierten Zielen, Meilensteinen und einer transparenten ROI-Betrachtung für Ihre Investition.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-200/80 text-center">
+                        <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-cyan-100 text-cyan-700 text-3xl font-bold">3</div>
+                        <h3 class="mt-5 text-xl font-bold text-slate-900">Pilotprojekt & Umsetzung</h3>
+                        <p class="mt-2 text-slate-600">"Klein anfangen, schnell lernen": Wir setzen ein überschaubares Pilotprojekt um, um die Technologie zu testen, Mitarbeiter zu involvieren und den Nutzen schnell zu beweisen.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-200/80 text-center">
+                        <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-cyan-100 text-cyan-700 text-3xl font-bold">4</div>
+                        <h3 class="mt-5 text-xl font-bold text-slate-900">Skalierung & Optimierung</h3>
+                        <p class="mt-2 text-slate-600">Nach dem erfolgreichen Pilotprojekt unterstützen wir Sie beim Roll-out in der gesamten Hotelgruppe, schulen Ihre Mitarbeiter und sorgen für eine kontinuierliche Verbesserung.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 2: Practical Examples: Hotel Industry -->
+            <div id="tab-examples" class="tab-content">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-slate-800">KI in der Praxis: Ihr Nutzen für die JUFA Hotels</h2>
+                    <p class="mt-2 text-md text-slate-500">Klicken Sie auf eine Karte, um konkrete Lösungsansätze für Ihre Hotels zu entdecken.</p>
+                </div>
+                <div class="space-y-4">
+                    <!-- Example Card 1 -->
+                    <div class="collapsible-card bg-white rounded-xl shadow-lg overflow-hidden border border-slate-200/80">
+                        <div class="collapsible-header grid md:grid-cols-2 gap-0 cursor-pointer hover:bg-slate-50/50 transition-colors duration-200">
+                            <div class="p-6 border-r border-slate-200/80"><h3 class="font-bold text-lg text-amber-600 flex items-center"><span class="text-3xl mr-3">😟</span>Unpersönliche Gästeansprache</h3><p class="mt-2 text-slate-600">Familien, Schulklassen und Sportvereine haben unterschiedliche Bedürfnisse. Eine generische Ansprache verfehlt die Chance auf ein perfektes, individuelles Urlaubserlebnis.</p></div>
+                            <div class="p-6 bg-cyan-50/30 flex flex-col justify-between"><h3 class="font-bold text-lg text-cyan-700 flex items-center"><span class="text-3xl mr-3">🎯</span>Intelligente Gästesegmentierung</h3><p class="mt-2 text-slate-600">KI erkennt Gästeprofile aus Buchungsdaten und ermöglicht vollautomatisch personalisierte Angebote, Aktivitäten und Kommunikation.</p><div class="mt-4"><span class="inline-flex items-center text-cyan-800 text-sm font-medium">Lösungsansatz anzeigen<svg class="chevron-icon ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></span></div></div>
+                        </div>
+                        <div class="collapsible-content bg-slate-50 border-t border-slate-200/80">
+                            <h4 class="font-semibold text-slate-800">Konkrete Umsetzung im JUFA Hotel:</h4>
+                            <p class="mt-2 text-slate-600">Ein Fußballverein bucht für ein Trainingslager. Das KI-System erkennt dies und sendet automatisch Informationen über Sportler-gerechte Mahlzeiten, die Nutzung des Kraftraums und mögliche Zeiten für Taktik-Besprechungen im Seminarraum. Gleichzeitig wird einer Familie, die im selben Zeitraum bucht, proaktiv ein Ausflugstipp zur nahegelegenen Sommerrodelbahn und ein Gutschein für ein Eis am Nachmittag zugesandt. Das steigert die Zufriedenheit und fördert den Zusatzverkauf.</p>
+                        </div>
+                    </div>
+                    <!-- Example Card 2 -->
+                    <div class="collapsible-card bg-white rounded-xl shadow-lg overflow-hidden border border-slate-200/80">
+                        <div class="collapsible-header grid md:grid-cols-2 gap-0 cursor-pointer hover:bg-slate-50/50 transition-colors duration-200">
+                            <div class="p-6 border-r border-slate-200/80"><h3 class="font-bold text-lg text-amber-600 flex items-center"><span class="text-3xl mr-3">🗑️</span>Ineffiziente Ressourcenplanung</h3><p class="mt-2 text-slate-600">Starre Reinigungspläne und ungenaue Schätzungen beim Buffet führen zu Stress beim Personal und unnötiger Lebensmittelverschwendung – ein Widerspruch zur JUFA-Nachhaltigkeitsphilosophie.</p></div>
+                            <div class="p-6 bg-cyan-50/30 flex flex-col justify-between"><h3 class="font-bold text-lg text-cyan-700 flex items-center"><span class="text-3xl mr-3">🌿</span>Vorausschauende Steuerung</h3><p class="mt-2 text-slate-600">KI prognostiziert basierend auf Echtzeit-Belegung und historischen Daten den Bedarf für Reinigung und Verpflegung und optimiert die Einsatzpläne.</p><div class="mt-4"><span class="inline-flex items-center text-cyan-800 text-sm font-medium">Lösungsansatz anzeigen<svg class="chevron-icon ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></span></div></div>
+                        </div>
+                        <div class="collapsible-content bg-slate-50 border-t border-slate-200/80">
+                             <h4 class="font-semibold text-slate-800">Konkrete Umsetzung im JUFA Hotel:</h4>
+                             <p class="mt-2 text-slate-600">Das System analysiert die Abreisen für den nächsten Tag und erstellt einen optimierten Reinigungsplan für das Housekeeping-Team. Gleichzeitig prognostiziert es aufgrund der erwarteten Gäste (z.B. viele Kinder) einen höheren Verbrauch von bestimmten Speisen wie Pommes Frites und Säften beim Abendbuffet. Die Küche kann den Einkauf präzise anpassen, was Kosten senkt und die Nachhaltigkeitsbilanz verbessert.</p>
+                        </div>
+                    </div>
+                    <!-- Example Card 3 -->
+                     <div class="collapsible-card bg-white rounded-xl shadow-lg overflow-hidden border border-slate-200/80">
+                        <div class="collapsible-header grid md:grid-cols-2 gap-0 cursor-pointer hover:bg-slate-50/50 transition-colors duration-200">
+                            <div class="p-6 border-r border-slate-200/80"><h3 class="font-bold text-lg text-amber-600 flex items-center"><span class="text-3xl mr-3">💬</span>Hoher manueller Kommunikationsaufwand</h3><p class="mt-2 text-slate-600">Die Rezeption verbringt viel Zeit mit der Beantwortung wiederkehrender Fragen per E-Mail und Telefon, die für die persönliche Betreuung der Gäste vor Ort fehlt.</p></div>
+                            <div class="p-6 bg-cyan-50/30 flex flex-col justify-between"><h3 class="font-bold text-lg text-cyan-700 flex items-center"><span class="text-3xl mr-3">🤖</span>Automatisierter & intelligenter Gästedialog</h3><p class="mt-2 text-slate-600">Ein KI-Chatbot beantwortet 24/7 Standardanfragen, während personalisierte Automatisierungen den Gast entlang seiner gesamten Reise begleiten.</p><div class="mt-4"><span class="inline-flex items-center text-cyan-800 text-sm font-medium">Lösungsansatz anzeigen<svg class="chevron-icon ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></span></div></div>
+                        </div>
+                        <div class="collapsible-content bg-slate-50 border-t border-slate-200/80">
+                             <h4 class="font-semibold text-slate-800">Konkrete Umsetzung im JUFA Hotel:</h4>
+                             <p class="mt-2 text-slate-600">Ein potenzieller Gast fragt um 22:00 Uhr auf der Webseite via Chatbot: "Sind Hunde im JUFA Hotel Hochkar erlaubt und gibt es Wanderwege direkt vom Hotel aus?". Der Bot antwortet sofort korrekt. Nach der Buchung erhält der Gast automatisch eine E-Mail mit den "Top 3 Wanderrouten für Hundebesitzer". Eine Woche nach dem Aufenthalt fragt das System per E-Mail nach Feedback und bittet um eine Bewertung. Dies entlastet das Team und sorgt für eine lückenlose, professionelle Kommunikation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 3: Funding & Next Steps -->
+            <div id="tab-funding" class="tab-content">
+                 <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-slate-800">Jetzt 50% Förderung sichern!</h2>
+                     <p class="mt-2 text-md text-slate-500 max-w-2xl mx-auto">Der FFG Digitalisierungs- und Innovationsscheck für KMU macht den Einstieg in die KI für Hotelbetriebe besonders attraktiv.</p>
+                </div>
+                <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg border border-slate-200/80 overflow-hidden">
+                    <div class="grid md:grid-cols-2">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-cyan-700">FFG Innovationsscheck</h3>
+                            <p class="mt-4 text-slate-600">Mit dem Innovationsscheck der Österreichischen Forschungsförderungsgesellschaft (FFG) können kleine und mittlere Unternehmen (KMU) externe Forschungs- und Entwicklungsdienstleistungen in Anspruch nehmen, um ihre Innovationskraft zu stärken.</p>
+                            <ul class="mt-6 space-y-3">
+                                <li class="flex items-start"><span class="text-cyan-500 mr-3 mt-1">✔</span><span><strong class="font-semibold text-slate-700">Förderhöhe:</strong> 50% der Projektkosten (bis zu € 10.000,- Scheck mit Selbstbehalt).</span></li>
+                                <li class="flex items-start"><span class="text-cyan-500 mr-3 mt-1">✔</span><span><strong class="font-semibold text-slate-700">Was wird gefördert:</strong> Kosten für Konzeption, Entwicklung und Umsetzung von KI-Pilotprojekten durch externe Experten wie uns.</span></li>
+                                <li class="flex items-start"><span class="text-cyan-500 mr-3 mt-1">✔</span><span><strong class="font-semibold text-slate-700">Ihr Vorteil:</strong> Reduzieren Sie Ihr finanzielles Risiko und profitieren Sie von externem Know-how für Ihre ersten KI-Schritte.</span></li>
+                            </ul>
+                        </div>
+                         <div class="p-8 bg-cyan-50/50 flex flex-col items-center justify-center">
+                             <h4 class="text-xl font-bold text-slate-800 text-center">Bereit für den nächsten Schritt?</h4>
+                             <p class="mt-2 text-center text-slate-600">Wir beraten Sie unverbindlich zur FFG-Förderung und Ihrem individuellen KI-Potenzial in der JUFA Gruppe.</p>
+                             <a href="#" class="mt-6 bg-amber-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-amber-600 transition-colors shadow-md">
+                                 Kostenloses Erstgespräch anfordern
+                             </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Tab Navigation Logic ---
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const tabId = button.dataset.tab;
+
+                    // Deactivate all buttons and content
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+
+                    // Activate the clicked button and corresponding content
+                    button.classList.add('active');
+                    const activeTab = document.getElementById(tabId);
+                    if(activeTab) {
+                        activeTab.classList.add('active');
+                    }
+                });
+            });
+
+            // --- Collapsible Card Logic ---
+            const collapsibleHeaders = document.querySelectorAll('.collapsible-header');
+
+            collapsibleHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const content = header.nextElementSibling;
+                    const icon = header.querySelector('.chevron-icon');
+                    
+                    if (content && icon) {
+                        // Toggle classes to expand/collapse content and rotate icon
+                        content.classList.toggle('expanded');
+                        icon.classList.toggle('rotated');
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
